@@ -1,0 +1,27 @@
+Package: dataDescrber
+Title: Practicing Package Distribution And Data Manipulation With R Package
+Version: 1.0.0
+Authors@R: 
+    person(given = "Alex",
+           family = "Wang",
+	   role = c("aut", "cre"),
+           email = "jwang206@hawk.iit.edu"
+           )
+Description: Use of DPLYR, READR and PSYCH packages to describe	data.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Depends: 
+    R (>= 3.1),
+    psych,
+    tidyverse,
+    readr
+Imports:
+    tidyverse,
+    lazyeval,
+    readr
+Suggests:
+    tidyverse,
+    lazyeval,
+    readr
