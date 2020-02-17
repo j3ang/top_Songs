@@ -3,6 +3,7 @@
 export(desc_data)
 export(draw_Corr)
 export(get_num_col)
+export(get_number_of_songBy_yr)
 export(get_popSongs)
 export(get_topArtists)
 export(get_topArtistsBy_yr)
