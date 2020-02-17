@@ -113,7 +113,6 @@ draw_Corr <- function(dataset.num.col, lowerCor){
 
   png('pars_panels.png')
   pairs.panels(dataset.num.col) # whows scatter plot matrices and as well as histograms and the Pearson correlation
-  dev.off()
 
   png('corPlot.png')
   gr <- colorRampPalette(c("#B52127", "white", "#2171B5"))
