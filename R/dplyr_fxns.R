@@ -78,7 +78,6 @@ get_popSongs<- function(dataset) {
 }
 
 
-
 #' This function returns top dance songs
 #' evaluated by (dnce by .3 + pop by .4  + nrgy by .3)
 #'
@@ -115,5 +114,24 @@ get_topDnceBy_yr <- function(dataset,y) {
     filter(year == y) -> topDnce_Yr
   return(topDnce_Yr)
 }
+
+#' This function returns number of songs grouped by year
+#' @param dataset The dataset
+#' @return number of songs by year
+#' @examples
+#' get_number_of_songBy_yr(songs)
+#' @export
+#'
+get_number_of_songBy_yr <- function(dataset){
+  dataset %>%
+    group_by(year) %>%
+    summarise(n = n()) %>%
+    arrange(desc(n)) -> n_songsBy_yr
+
+  return(n_songsBy_yr)
+}
+
+
+
 
 
